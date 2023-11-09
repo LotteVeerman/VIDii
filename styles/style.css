@@ -1,0 +1,535 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+
+@font-face {
+  font-family: 'SF-Slapstick-Comic-Shaded';
+  src: url('../fonts/SF-Slapstick-Comic-Shaded.woff2') format('woff2'),
+       url('../fonts/SF-Slapstick-Comic-Shaded.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PlaypenSansMedium';
+  src: url('../fonts/PlaypenSans-Medium.woff2') format('woff2'),
+       url('../fonts/PlaypenSans-Medium.woff') format('woff');
+  font-weight: Medium;
+}
+
+@font-face {
+  font-family: 'PlaypenSansBold';
+  src: url('../fonts/PlaypenSans-Bold.woff2') format('woff2'),
+       url('../fonts/PlaypenSans-Bold.woff') format('woff');
+  font-weight: Bold;
+}
+
+/* naar een idee van Jen Simmons */
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+body {
+  margin:0;
+  cursor: none;
+}
+
+#cursor{
+  position: absolute;
+  z-index: 100;
+}
+
+h1{
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  font-family: 'SF-Slapstick-Comic-Shaded';
+  font-size: 2.4em;
+  color: white;
+}
+
+h2{
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  font-family: SF Slapstick Comic Shaded;
+  font-size: 2.4em;
+  visibility: hidden;
+  color: white;
+}
+
+/* groene achtergrond */
+section:nth-of-type(1) img:nth-of-type(1) {
+  position: absolute;
+  width: 100%;
+}
+
+/* Rugzak */
+section:nth-of-type(1) img:nth-of-type(2) {
+  position: absolute;
+  width: 20%;
+  margin-top: 15%;
+  margin-left: 40%;
+}
+
+/* Bal */
+section:nth-of-type(1) img:nth-of-type(3) {
+  position: absolute;
+  width: 13%;
+  margin-left: 20%;
+  margin-top: 35%;
+  animation-name: bal;
+  animation-duration: 3s ;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bal {
+  0% {
+    transform: translateY(0);
+  } 
+  50% {
+    transform: translate(-20px, 20px);
+  } 
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Banaan */
+section:nth-of-type(1) img:nth-of-type(4) {
+  position: absolute;
+  width: 10%;
+  margin-left: 55%;
+  margin-top: 45%;
+  animation-name: banaan;
+  animation-duration: 3s ;
+  animation-iteration-count: infinite;
+}
+
+@keyframes banaan {
+  0% {
+    transform: translateY(0);
+  } 
+  50% {
+    transform: translate(10px, 20px);
+  } 
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* kaart */
+section:nth-of-type(1) button:nth-of-type(1) {
+  position: absolute;
+  width: 8%;
+  margin-left: 65%;
+  margin-top: 7%;
+  background: none;
+  border: none;
+  animation-name: kaart;
+  animation-duration: 3s ;
+  animation-iteration-count: infinite;
+  cursor: none;
+}
+
+@keyframes kaart {
+  0% {
+    transform: translateY(0);
+  } 
+  50% {
+    transform: translate(20px, -20px);
+  } 
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Schaar */
+section:nth-of-type(1) img:nth-of-type(5) {
+  position: absolute;
+  width: 13%;
+  margin-left: 70%;
+  margin-top: 27%;
+  animation-name: schaar;
+  animation-duration: 3s ;
+  animation-iteration-count: infinite;
+}
+
+@keyframes schaar {
+  0% {
+    transform: translateY(0);
+  } 
+  50% {
+    transform: translate(20px, 0px);
+  } 
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Zonnebril */
+section:nth-of-type(1) img:nth-of-type(6) {
+  position: absolute;
+  width: 10%;
+  margin-left: 25%;
+  margin-top: 10%;
+  animation-name: zonnebril;
+  animation-duration: 3s ;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zonnebril {
+  0% {
+    transform: translateY(0);
+  } 
+  50% {
+    transform: translate(-20px, -20px);
+  } 
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/* Zwieber */
+section:nth-of-type(1) img:nth-of-type(7) {
+  position: absolute;
+  width: 15%;
+  margin-left: 79%;
+  margin-top: 70%;
+  visibility: hidden;
+}
+
+@keyframes zwieber {
+  0% {
+    transform: translateY(0);
+  } 
+  50% {
+    transform: translateY(-400px);
+  } 
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+/* Kaart achtergrond */
+section:nth-of-type(2) img:nth-of-type(1) {
+  position: absolute;
+  width: 100%;
+  visibility: hidden;
+}
+
+/* Kaart */
+section:nth-of-type(2) img:nth-of-type(2) {
+  position: absolute;
+  width: 10%;
+  margin-left: 16%;
+  margin-top: 8%;
+  animation-name: kaart2;
+  animation-duration: 3s ;
+  animation-iteration-count: infinite;
+  visibility: hidden;
+}
+
+@keyframes kaart2 {
+  0% {
+    transform: translateY(0);
+  } 
+  50% {
+    transform: translateY(15px);
+  } 
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Pijl terug */
+section:nth-of-type(2) button:nth-of-type(1) img{
+  position: absolute;
+  z-index: 20;
+  width: 7%;
+  margin-left: 2%;
+  margin-top: 1.5%;
+  background: none;
+  border: none;
+  visibility: hidden;
+  cursor: none;
+}
+
+/* Vlag 1 */
+section:nth-of-type(2) button:nth-of-type(2) img{
+  position: absolute;
+  width: 4%;
+  margin-left: 21%;
+  margin-top: 44.5%;
+  background: none;
+  border: none;
+  visibility: hidden;
+  cursor: none;
+}
+
+/* Vlag 2 */
+section:nth-of-type(2) button:nth-of-type(3) img{
+  position: absolute;
+  width: 4%;
+  margin-left: 16.5%;
+  margin-top: 25.5%;
+  background: none;
+  border: none;
+  visibility: hidden;
+  cursor: none;
+}
+
+/* Vlag 3 */
+section:nth-of-type(2) button:nth-of-type(4) img{
+  position: absolute;
+  width: 4%;
+  margin-left: 48.5%;
+  margin-top: 14.5%;
+  background: none;
+  border: none;
+  visibility: hidden;
+  cursor: none;
+}
+
+/* Vlag 4 */
+section:nth-of-type(2) button:nth-of-type(5) img{
+  position: absolute;
+  width: 4%;
+  margin-left: 53.5%;
+  margin-top: 31.5%;
+  background: none;
+  border: none;
+  visibility: hidden;
+  cursor: none;
+}
+
+/* Vlag 5 */
+section:nth-of-type(2) button:nth-of-type(6) img{
+  position: absolute;
+  width: 4%;
+  margin-left: 59.5%;
+  margin-top: 46.5%;
+  background: none;
+  border: none;
+  visibility: hidden;
+  cursor: none;
+}
+
+/* Vlag 6 */
+section:nth-of-type(2) button:nth-of-type(7) img{
+  position: absolute;
+  width: 4%;
+  margin-left: 68%;
+  margin-top: 28%;
+  background: none;
+  border: none;
+  visibility: hidden;
+  cursor: none;
+}
+
+/* Popup achtergrond */
+section:nth-of-type(3) article{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 25;
+}
+
+/* Popup logo */
+section:nth-of-type(3) article img:nth-of-type(1) {
+  width: 30%;
+  left: 37%;
+  bottom: 86%
+}
+
+/* Popup Dora 1 */
+section:nth-of-type(3) article:nth-of-type(1) img:nth-of-type(2) {
+  width: 25%;
+  left: 28%;
+  bottom: 9%
+}
+
+/* Popup Dora 2 */
+section:nth-of-type(3) article:nth-of-type(2) img:nth-of-type(2) {
+  width: 30%;
+  left: 25%;
+  bottom: 9%
+}
+
+/* Popup Dora 3 */
+section:nth-of-type(3) article:nth-of-type(3) img:nth-of-type(2) {
+  width: 37%;
+  left: 21%;
+  bottom: 5%;
+}
+
+/* Popup Dora 4 */
+section:nth-of-type(3) article:nth-of-type(4) img:nth-of-type(2) {
+  width: 29%;
+  left: 25%;
+  bottom: 8%;
+}
+
+/* Popup Dora 5 */
+section:nth-of-type(3) article:nth-of-type(5) img:nth-of-type(2) {
+  width: 24%;
+  left: 28%;
+  bottom: 8%;
+}
+
+/* Popup Dora 6 */
+section:nth-of-type(3) article:nth-of-type(6) img:nth-of-type(2) {
+  width: 27%;
+  left: 28%;
+  bottom: 8%;
+}
+
+/* Popup blok */
+section:nth-of-type(3) article section {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 1em;
+  position: absolute;
+  width: 40em;
+  height: 27em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Popup kruis */
+#close-button {
+  position: absolute;
+  text-align: right;
+  top: 0.2em;
+  right: 0.5em;
+  font-size: 3em;
+  cursor: none;
+}
+
+/* Popup tekst */
+h3{
+  font-family: 'SF Slapstick Comic Shaded';
+  font-size: 2.7em;
+  margin: 0em;
+}
+
+h4{
+  font-family: 'PlaypenSansBold';
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+
+section:nth-of-type(3) p{
+  font-family: 'PlaypenSansMedium';
+  font-size: 0.8em;
+  max-width: 27em;
+  margin: 1em 0 0 0;
+}
+
+/* Teller */
+section:nth-of-type(2) p{
+  position: absolute;
+  font-family: 'PlaypenSansBold';
+  font-size: 1.1em;
+  z-index: 20;
+  visibility: hidden;
+  background-color: white;
+  border: 3.5px solid #041D7F;
+  color: #041D7F;
+  padding: 0.8em 1.6em;
+  top: 2%;
+  left: 88%;
+  border-radius: 2em;
+}
+
+/* Boots */
+section:nth-of-type(2) img:nth-of-type(3) {
+  position: absolute;
+  width: 4%;
+  margin-left: 17%;
+  margin-top: 49%;
+  visibility: hidden;
+}
+
+/* Rots */
+section:nth-of-type(2) img:nth-of-type(4) {
+  position: absolute;
+  width: 6%;
+  margin-left: 17%;
+  margin-top: 49%;
+  visibility: hidden;
+}
+
+
+@keyframes bootsAnimation {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-400px) scale(5);
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* Eekhoorn */
+section:nth-of-type(2) img:nth-of-type(5) {
+  position: absolute;
+  width: 5%;
+  margin-left: 68%;
+  margin-top: 23.5%;
+  visibility: hidden;
+}
+
+/* Vulkaan */
+section:nth-of-type(2) img:nth-of-type(6) {
+  position: absolute;
+  width: 12%;
+  margin-left: 60%;
+  margin-top: 18%;
+  visibility: hidden;
+}
+
+@keyframes eekhoornAnimation {
+  0% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-400px) scale(5);
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
